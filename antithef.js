@@ -281,12 +281,13 @@ function onChange({ value, actionType, item }) {
   }
   
   
-  let debounceTimeout;
-  let isExecuting = false;
+
   
   
   
   function onChange5({ value, actionType, item }) {
+        let debounceTimeout;
+  let isExecuting = false;
     if (isExecuting) {
       this.utils.toast({
         title: '请稍等，上一个操作尚未完成。',
